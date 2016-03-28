@@ -1,4 +1,4 @@
-- two way to add listener
+- two way to add listener(ignore inline style)
 - event delegation
 - event order : {
 	1. capturing (addEventListener)
