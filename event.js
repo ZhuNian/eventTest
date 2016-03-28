@@ -4,17 +4,16 @@ function onload() {
 	var em2 = document.getElementById('div2');
 	var em3 = document.getElementById('div3');
 
-	em3.onclick = clickFun.bind(null, 'attr');
-	em3.addEventListener('click', clickFun.bind(null, 'addEventListener'), false);
-
-
-	// em3.onclick = clickFun.bind(null, 'attr2');
-	// em3.addEventListener('click', clickFun.bind(null, 'addEventListener2'), false);
+	em1.addEventListener('click', clickFun, false);
+	// em3.addEventListener('click', function(e) {
+	// 	e.stopPropagation();
+	// 	alert("this is div3's own alert" + ' ' + e.target.id +' ' + e.currentTarget.id);
+	// }, false);
 }
 
 
-function clickFun(msg, e) {
+function clickFun(e) {
 	e.target.style.backgroundColor='blue';
-	alert(msg || e.target.id);
+	alert(e.target.id +' ' + e.currentTarget.id);
 	e.target.style.backgroundColor='';
 } 
