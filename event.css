@@ -1,0 +1,23 @@
+div {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#div1 {
+	margin-top: 5rem;
+	height: 15rem;
+	width: 20rem;
+	background-color: yellow;
+}
+
+#div2 {
+	height: 10rem;
+	width: 15rem;
+	background-color: red;
+}
+
+#div3 {
+	height: 5rem;
+	width: 10rem;
+	background-color: green;
+}
