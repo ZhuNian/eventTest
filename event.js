@@ -4,17 +4,13 @@ function onload() {
 	var em2 = document.getElementById('div2');
 	var em3 = document.getElementById('div3');
 
-	em1.addEventListener('click', clickFun, true);
-	em2.addEventListener('click', clickFun, false);
+	em2.addEventListener('click', function(e){
+		// e.preventDefault();
+		alert('div2 prevent default');
+	}, false);
 
 
-	// em2.addEventListener('click', function(){alert('bubble')}, false);
-	// em2.addEventListener('click', function(){alert('capturing')}, true);
+	em3.addEventListener('click', function(){
+		alert('div3');
+	}, false);
 }
-
-
-function clickFun(e) {
-	e.currentTarget.style.backgroundColor='blue';
-	alert(e.target.id +' ' + e.currentTarget.id);
-	e.currentTarget.style.backgroundColor='';
-} 

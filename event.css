@@ -1,3 +1,6 @@
+a {
+	display: inline-block;
+}
 div {
 	margin: 0 auto;
 	text-align: center;
@@ -5,19 +8,16 @@ div {
 
 #div1 {
 	margin-top: 5rem;
-	height: 15rem;
-	width: 20rem;
-	background-color: yellow;
+	height: 10rem;
+	width: 10rem;
 }
 
 #div2 {
 	height: 10rem;
-	width: 15rem;
-	background-color: red;
+	width: 10rem;
 }
 
 #div3 {
-	height: 5rem;
+	height: 10rem;
 	width: 10rem;
-	background-color: green;
 }
